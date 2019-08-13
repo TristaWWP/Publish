@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net45</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <StartupObject>PublishHomework.Program</StartupObject>
+    <Product>发布作业</Product>
+    <Authors>王文平</Authors>
+    <Company>CVTE</Company>
+    <Description>启动希沃白板后，选择几张照片，就可以发布作业
+照片数量需要小于 6 张</Description>
+    <Version>1.9.2</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cvte.WebService" Version="1.2.4.88" />
+    <PackageReference Include="dotnetCampus.EasiPlugin.Sdk" Version="0.9.1-alpha" />
+    <PackageReference Include="System.Windows.Interactivity.WPF" Version="2.0.20525" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+
+</Project>
